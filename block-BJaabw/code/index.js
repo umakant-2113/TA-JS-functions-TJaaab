@@ -11,9 +11,10 @@ minToSec(2) ➞ 120
 */
 
 // - Write a Function Decleration for above problem
-function minToSec() {
-  // Your code
+function minToSec(minutes) {
+  return minutes * 60;
 }
+minToSec(10);
 // - Execute the function with required parameter
 
 /* 2. 
@@ -26,9 +27,14 @@ isInRange(1, 10, 19); // false
 */
 
 // - Write a Function Decleration for above problem
-function isInRange() {
-  // Your code
+function isInRange(lower, uppar, range) {
+  if (uppar >= range && range >= lower) {
+    return true;
+  } else {
+    return false;
+  }
 }
+isInRange(1, 30, 20);
 // - Execute the function with required parameter
 
 /* 2. calculateBMI
@@ -85,7 +91,7 @@ function sum() {
 
 // Function Test
 sum(2, 4); // 4
-sum('Arya', 'Stark'); // "Arya Stark"
-sum('Arya', 2); // Enter valid Values
+sum("Arya", "Stark"); // "Arya Stark"
+sum("Arya", 2); // Enter valid Values
 sum(null, 2); // Enter valid Values
 sum(undefined, 2); // Enter valid Values
